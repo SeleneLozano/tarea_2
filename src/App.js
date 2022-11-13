@@ -36,7 +36,7 @@ const degree = weather.main?.temp;
       <p> <b>Pressure :</b> {weather.main?.pressure}  hPa</p>
       <p> <b>Humidity :</b> {weather.main?.humidity}  %</p>
       <p>
-    <img src={` http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`}></img>
+    <img src={`http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="description of weather"></img>
           <b>Degrees :</b> {isFarenheit ? ((degree - 273.15) *(9/5)+32).toFixed(2) : (degree - 273.15).toFixed(2)} {" "}
           {isFarenheit ? "°F" : "°C"}
       </p>
